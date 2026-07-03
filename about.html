@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Minha Nawaz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a class="logo" href="index.html">Minha <span>Nawaz</span></a>
+    <div class="navlinks">
+      <a href="about.html" class="active">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="achievements.html">Awards</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="section-eyebrow reveal">Get to know me</div>
+  <h1 class="reveal">About</h1>
+</div>
+<section>
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a <strong>Software Engineering</strong> student at AIR University (NIIT), Lahore, with a foundation spanning computer science, mathematics, and applied development. My work sits at the intersection of <strong>AI applications</strong>, <strong>IoT solutions</strong>, and <strong>full-stack web projects</strong>.</p>
+        <p>I've carried that curiosity into research, hardware, and international competition — including recognition as a <strong>Galactic Problem Solver</strong> at the NASA International Space Apps Challenge. Outside the lab, I've led as Head of the Literary Club, organizing student events and activities.</p>
+      </div>
+      <div class="reveal">
+        <div class="edu-card">
+          <div class="edu-year">2024 — 2028</div>
+          <div class="edu-school">AIR University (NIIT), Lahore</div>
+          <div class="edu-degree">B.S. Software Engineering (BSSE) — Junior</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-year">2022 — 2024</div>
+          <div class="edu-school">Defence Degree College for Women, Lahore</div>
+          <div class="edu-degree">Intermediate (ICS)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div>DHA Phase 6, Lahore &nbsp;·&nbsp; 0321-8848444 &nbsp;·&nbsp; <a href="mailto:Minhanawaz07@gmail.com">Minhanawaz07@gmail.com</a> &nbsp;·&nbsp; © 2026 Minha Nawaz</div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); } });
+  }, {threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>

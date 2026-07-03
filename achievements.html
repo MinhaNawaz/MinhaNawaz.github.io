@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awards — Minha Nawaz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a class="logo" href="index.html">Minha <span>Nawaz</span></a>
+    <div class="navlinks">
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="achievements.html" class="active">Awards</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="section-eyebrow reveal">Milestones</div>
+  <h1 class="reveal">Achievements &amp; Leadership</h1>
+</div>
+<section>
+  <div class="section-inner">
+    <div class="ach-grid reveal">
+      <div class="ach-card">
+        <div class="ach-icon">★</div>
+        <div class="ach-title">Galactic Problem Solver</div>
+        <div class="ach-desc">NASA International Space Apps Challenge 2024 — recognized for innovation in space exploration and sustainability solutions.</div>
+      </div>
+      <div class="ach-card">
+        <div class="ach-icon">✎</div>
+        <div class="ach-title">Head of Literary Club</div>
+        <div class="ach-desc">Managed student literary events and activities.</div>
+      </div>
+      <div class="ach-card">
+        <div class="ach-icon">◇</div>
+        <div class="ach-title">Leadership Training</div>
+        <div class="ach-desc">Kinnaird College — community service and collaborative academic participation.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div>DHA Phase 6, Lahore &nbsp;·&nbsp; 0321-8848444 &nbsp;·&nbsp; <a href="mailto:Minhanawaz07@gmail.com">Minhanawaz07@gmail.com</a> &nbsp;·&nbsp; © 2026 Minha Nawaz</div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); } });
+  }, {threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>

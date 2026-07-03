@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills — Minha Nawaz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a class="logo" href="index.html">Minha <span>Nawaz</span></a>
+    <div class="navlinks">
+      <a href="about.html">About</a>
+      <a href="skills.html" class="active">Skills</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="achievements.html">Awards</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="section-eyebrow reveal">What I work with</div>
+  <h1 class="reveal">Skills</h1>
+</div>
+<section>
+  <div class="section-inner">
+    <div class="skills-grid reveal">
+      <div class="skill-cell">
+        <div class="cell-label">Languages</div>
+        <div class="skill-tags">
+          <span class="tag">C++</span><span class="tag">HTML</span><span class="tag">CSS (Tailwind)</span><span class="tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-cell">
+        <div class="cell-label">Frameworks</div>
+        <div class="skill-tags"><span class="tag">React.js</span></div>
+      </div>
+      <div class="skill-cell">
+        <div class="cell-label">Concepts</div>
+        <div class="skill-tags">
+          <span class="tag">OOP</span><span class="tag">Data Structures &amp; Algorithms</span><span class="tag">DBMS</span><span class="tag">Computer Organization</span><span class="tag">AI Fundamentals</span><span class="tag">SDLC</span>
+        </div>
+      </div>
+      <div class="skill-cell">
+        <div class="cell-label">Tools</div>
+        <div class="skill-tags">
+          <span class="tag">REST APIs</span><span class="tag">Pencil2D</span><span class="tag">IoT Basics</span>
+        </div>
+      </div>
+      <div class="skill-cell">
+        <div class="cell-label">Currently Learning</div>
+        <div class="skill-tags">
+          <span class="tag learning">Machine Learning</span><span class="tag learning">Advanced AI Systems</span><span class="tag learning">Full Stack Dev</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div>DHA Phase 6, Lahore &nbsp;·&nbsp; 0321-8848444 &nbsp;·&nbsp; <a href="mailto:Minhanawaz07@gmail.com">Minhanawaz07@gmail.com</a> &nbsp;·&nbsp; © 2026 Minha Nawaz</div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); } });
+  }, {threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>

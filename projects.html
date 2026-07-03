@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Minha Nawaz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a class="logo" href="index.html">Minha <span>Nawaz</span></a>
+    <div class="navlinks">
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="achievements.html">Awards</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="section-eyebrow reveal">Things I've built</div>
+  <h1 class="reveal">Projects</h1>
+</div>
+<section>
+  <div class="section-inner">
+    <div class="projects-grid reveal">
+      <div class="project-card">
+        <div class="project-tag">AI Concept Project</div>
+        <div class="project-title">Misinfo Shield App</div>
+        <div class="project-desc">A full-stack web app for detecting misinformation, fake news, and scams, with a responsive React.js and Tailwind CSS frontend. Integrates REST APIs for real-time analysis and supports English, Urdu, and Roman Urdu.</div>
+      </div>
+      <div class="project-card">
+        <div class="project-tag">Software Requirements Engineering</div>
+        <div class="project-title">Intelligent Error Detection Website</div>
+        <div class="project-desc">A smart error detection web app built with React.js, a responsive Tailwind CSS UI, and REST API integration — applying system modeling and validation from coursework.</div>
+      </div>
+      <div class="project-card">
+        <div class="project-tag">IoT Project</div>
+        <div class="project-title">Ultrasonic Radar Management System</div>
+        <div class="project-desc">An IoT-based radar system for real-time object detection, combining sensor-based distance measurement with embedded logic and hardware-software integration.</div>
+      </div>
+      <div class="project-card">
+        <div class="project-tag">C++ / OOP Project</div>
+        <div class="project-title">Warehouse Resource Management System</div>
+        <div class="project-desc">A console-based, menu-driven system built on core OOP principles — implemented without STL or string libraries to strengthen core fundamentals.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div>DHA Phase 6, Lahore &nbsp;·&nbsp; 0321-8848444 &nbsp;·&nbsp; <a href="mailto:Minhanawaz07@gmail.com">Minhanawaz07@gmail.com</a> &nbsp;·&nbsp; © 2026 Minha Nawaz</div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); } });
+  }, {threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
